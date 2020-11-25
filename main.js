@@ -9,6 +9,8 @@ function isPrime() {
   } else if (n < 0) {
     answer.innerHTML = 'It must be a positiv number.'
     answer.style.color = 'red';
+  } else if (n == 0) {
+    answer.innerHTML = 'You can not divide by zero.'
   }
   for (const d = 2; d <= n; d++){ //modulus operation
     if (n % d == 0){
